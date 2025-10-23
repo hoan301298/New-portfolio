@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { experiences } from "@/assets/content/experiences";
+import { experiences } from "@/assets/content/data";
 import { useState } from "react";
 import PdfModal from "@/components/ui/pdfModal";
 

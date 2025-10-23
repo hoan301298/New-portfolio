@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import { projects } from "@/assets/content/projects";
+import { projects } from "@/assets/content/data";
 
 const Projects = () => {
   return (
