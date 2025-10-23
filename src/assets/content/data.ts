@@ -33,7 +33,7 @@ export const experiences = [
             "Collaborated with 9 developers and cross-functional teams to improve large-scale industrial solutions in Metso’s Mineral Digital Development segment."
         ],
         technologies: ["React", "TypeScript", ".NET", "Redux", "Industrial Protocols", "CI/CD", "Linux", "Restful APIs", "Jira", "Confluence", "Rancher", "Azure PaaS", "Docker", "Kubernetes", "Cloudflare"],
-        certificate: "/Certification-of-employment-Tran-Hoan.pdf",
+        certificate: "@/assets/pdf/Certification-of-employment-Tran-Hoan.pdf",
     },
     {
         title: "Full-Stack Developer",
