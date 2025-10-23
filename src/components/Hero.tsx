@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import heroBg from "@/assets/images/hero-bg.jpg";
 import { handleDownload } from "./helper/download";
+import heroBg from "@/assets/images/hero-bg.jpg";
+import avatar from "@/assets/images/avatar.jpeg"
 
 const iconButton = [
   { href: "https://github.com/hoan301298", icon: Github },
@@ -31,7 +32,7 @@ const Hero = () => {
       <div className="container relative z-10 px-4 ">
         <div className="max-w-3xl mx-auto pt-10 text-center space-y-6 animate-fade-up">
           <Avatar id="avatar" className="w-36 h-36 mx-auto ring-4 ring-primary/20 animate-scale-in hover:ring-8 hover:ring-primary/40 transition-all duration-300" >
-            <AvatarImage src="/avatar.jpeg" alt="Hoan Tran" />
+            <AvatarImage src={avatar} alt="Hoan Tran" />
           </Avatar>
           
           <div className="space-y-3">

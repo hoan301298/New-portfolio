@@ -3,7 +3,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import { Download } from "lucide-react";
 import { handleDownload } from "../helper/download";
 
-pdfjs.GlobalWorkerOptions.workerSrc = "/pdfjs/pdf.worker.min.js";
+pdfjs.GlobalWorkerOptions.workerSrc = `${import.meta.env.BASE_URL}pdfjs/pdf.worker.min.js`;
 
 interface PdfModalProps {
     isOpen: boolean;
