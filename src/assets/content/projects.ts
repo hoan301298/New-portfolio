@@ -11,7 +11,7 @@ export const projects = [
       description: "This project built with a React.js frontend and a Node.js backend. The project simulates a space mission control system where users can schedule and manage space launches.",
       tech: ["React", "JavaScipt", "Node.js", "Express.js", "MongoDB", "Docker", "Arwes", "Restful APIs" ],
       github: "https://github.com/hoan301298/Nasa-mission-control",
-      demo: "https://nasa-api-frontend-d41r.onrender.com/"
+      demo: "https://nasa-mission-control-fi.netlify.app/"
     },
     {
       title: "Ekseli Spreadsheet",
