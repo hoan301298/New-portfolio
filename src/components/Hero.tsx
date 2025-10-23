@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { handleDownload } from "./helper/download";
 import heroBg from "@/assets/images/hero-bg.jpg";
 import avatar from "@/assets/images/avatar.jpeg";
+import { pdf } from "@/assets/pdf";
 
 const iconButton = [
   { href: "https://github.com/hoan301298", icon: Github },
@@ -54,7 +55,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all hover:scale-105"
-              onClick={() => handleDownload('/New-portfolio/src/assets/pdf/HoanTran-Resume.pdf')}
+              onClick={() => handleDownload(pdf.resume)}
             >
               Download Resume / CV
               <Download className="ml-2 h-4 w-4" />

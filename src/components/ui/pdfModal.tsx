@@ -1,9 +1,10 @@
 import { Button } from "./button";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Download } from "lucide-react";
-import { handleDownload } from "../helper/download";
+import { handleDownload } from "@/components/helper/download";
+import { baseUrl } from "../helper/constant";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `${import.meta.env.BASE_URL}pdfjs/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `${baseUrl}pdfjs/pdf.worker.min.js`;
 
 interface PdfModalProps {
     isOpen: boolean;
@@ -13,7 +14,7 @@ interface PdfModalProps {
 
 const PdfModal = ({ isOpen, onClose, pdfUrl } : PdfModalProps) => {
     if (!isOpen) return null;
-
+    console.log(pdfUrl);
     return (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
             <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full max-h-[90vh] overflow-hidden p-4 relative">
