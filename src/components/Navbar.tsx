@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { Avatar, AvatarImage } from "./ui/avatar";
+import avatar from "@/assets/images/avatar.jpeg"
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -33,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             {showAvatar && (
               <Avatar className="w-12 h-12 mx-auto ring-4 ring-primary/20 animate-scale-in hover:ring-8 hover:ring-primary/40 transition-all duration-300" id="avatar">
-                <AvatarImage src="/avatar.jpeg" alt="Hoan Tran" />
+                <AvatarImage src={avatar} alt="Hoan Tran" />
               </Avatar>
             )}
             <button

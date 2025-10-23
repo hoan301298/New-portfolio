@@ -54,7 +54,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all hover:scale-105"
-              onClick={() => handleDownload('@/assets/pdf/HoanTran-Resume.pdf')}
+              onClick={() => handleDownload('/New-portfolio/src/assets/pdf/HoanTran-Resume.pdf')}
             >
               Download Resume / CV
               <Download className="ml-2 h-4 w-4" />
